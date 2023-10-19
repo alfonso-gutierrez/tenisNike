@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Nike</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="img/logo.png" style="width: 50px;"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Costo</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2">Total:</td>
+                                        <td id="total-carrito">$0.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="img/prueba.jpeg" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena los mejores tenis</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/n1.jfif" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Nike Dunk High Retro SE</h3>
+                <a href="#" class="btn-2">Ver más</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/n2.webp" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Nike Air Force 1 '07</h3>
+                <a href="#" class="btn-2">Ver más</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/n3.webp" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Nike Dunk Low</h3>
+                <a href="#" class="btn-2">Ver más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2 id="productos">Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="img/p1.jfif" alt="">
+                <div class="product-txt">
+                    <h3>Nike Dunk Low Retro SE</h3>
+                    <p>El ícono del básquetbol de los 80, creado para la cancha, pero adecuado a la moda urbana, está de
+                        vuelta con detalles bordados, costuras en contraste y un estilo de básquetbol retro. La zona del
+                        tobillo acolchada de corte low te permite ir cómodamente a cualquier parte.</p>
+                    <p class="precio">$2699</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p2.jfif" alt="">
+                <div class="product-txt">
+                    <h3>Nike Dunk Mid</h3>
+                    <p>El ícono del básquetbol de los 80, creado para la cancha y adecuado a la moda urbana, está de
+                        vuelta con un clásico lienzo desteñido con piedras en un diseño duradero. Para canalizar un
+                        estilo vintage de vuelta a las calles, el cuello acolchado de corte mid te permite llevar tu
+                        juego a cualquier lugar, con comodidad.</p>
+                    <p class="precio">$2699</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img/p3.jfif" alt="">
+                <div class="product-txt">
+                    <h3>Air Jordan 1 Mid SE</h3>
+                    <p>Disfruta del verano con el AJ1, tu nuevo modelo favorito. Confeccionado con una combinación de
+                        gamuza y lona, este par ofrece la comodidad que más te gusta con una actualización de temporada.
+                    </p>
+                    <p class="precio">$3299</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p4.webp" alt="">
+                <div class="product-txt">
+                    <h3>Nike SB Zoom Blazer Mid</h3>
+                    <p>El calzado Nike SB Zoom Blazer Mid ajusta un hereditario diseño a las necesidades del
+                        skateboarder moderno. La combinación de una suave amortiguación con la suela flexible
+                        proporcionan una increíble interacción con la patineta y te dan tracción.</p>
+                    <p class="precio">$2349</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p5.webp" alt="">
+                <div class="product-txt">
+                    <h3>Nike Air Max Impact 4</h3>
+                    <p>Mejora tu juego y tu estilo de básquetbol. Cargado con amortiguación Max Air en el talón, este
+                        calzado ligero y seguro te ayuda a despegar del suelo con confianza y a aterrizar con comodidad.
+                        Además, la goma envuelve los laterales para brindar soporte y estabilidad adicionales.</p>
+                    <p class="precio">$2299</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p6.webp" alt="">
+                <div class="product-txt">
+                    <h3>Air Jordan 1 Mid</h3>
+                    <p>Inspirada en el AJ1 original, esta edición de corte mid mantiene el look icónico que te encanta,
+                        y los colores selectos y el cuero impecable le dan una identidad distintiva.</p>
+                    <p class="precio">$3099</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p7.webp" alt="">
+                <div class="product-txt">
+                    <h3>Air Jordan 1 Low</h3>
+                    <p>Inspirado en el original que se lanzó en 1985, el Air Jordan 1 Low ofrece un estilo clásico
+                        impecable que se resulta familiar, pero renovado. Con un diseño icónico que combina
+                        perfectamente con cualquier ajuste, este calzado garantiza que siempre estará a la moda.</p>
+                    <p class="precio">$2799</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p8.webp" alt="">
+                <div class="product-txt">
+                    <h3>Nike ISPA Universal</h3>
+                    <p>El progreso, la experimentación y la confección. Con un diseño modular y componentes innovadores,
+                        el ISPA Universal te permite entrar en el futuro del calzado. Inspirado en tres íconos de Nike
+                        (el Air Max 270, el Zoom Type y el Solarsoft HTM), aprovechamos los datos proporcionados por
+                        computadora para crear un look único. Cada par se pule a mano, lo que da como resultado un
+                        acabado artesanal único que varía de un calzado a otro. ¿Alguien quiere un respiro de aire
+                        fresco?</p>
+                    <p class="precio">$2299</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/p9.webp" alt="">
+                <div class="product-txt">
+                    <h3>Air Jordan 1 Retro High OG Craft</h3>
+                    <p>Atrae las miradas desde el amanecer hasta el anochecer con el Air Jordan 1. El denim premium en
+                        la parte superior está teñido con un gradiente de colores claros a oscuros, que cambia de un
+                        efecto de resplandor alpino a crepuscular. El diseño asimétrico te permite crear una atmósfera
+                        única, ¿y el toque final? La amortiguación Nike Air en la planta del pie te permite llevar tu
+                        juego a todas partes con comodidad. Las posibilidades son infinitas con este diseño.</p>
+                    <p class="precio">$4399</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al Carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/logo.png" style="width: 500px;" alt="Logo de Nike">
+            </div>
+            <div class="icon-txt">
+                <h3>Tenis Nike</h3>
+                <p>Descubre los mejores tenis Nike para todas tus actividades deportivas y de estilo.</p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/air.png" style="width: 500px;" alt="Tenis Nike Air">
+            </div>
+            <div class="icon-txt">
+                <h3>Nike Air</h3>
+                <p>Experimenta la comodidad y el rendimiento de los icónicos tenis Nike Air.</p>
+            </div>
+        </div>
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/running.png" style="width: 500px;" alt="Tenis Nike para correr">
+            </div>
+            <div class="icon-txt">
+                <h3>Tenis para Correr</h3>
+                <p>Encuentra los tenis Nike diseñados para maximizar tu rendimiento en cada carrera.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-video">
+        <section class="blog container">
+            <article>
+                <h2>"JUST DO IT"</h2>
+            </article>
+        </section>
+        <video autoplay loop id="video-background" muted plays-inline>
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="hero" id="contacto">
+        <div class="container">
+            <h1 class="hero-title">Acerca de Nike</h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <p class="section-description">En Nike, nuestro objetivo es inspirar y motivar a atletas de todo el mundo,
+                brindándoles productos de alta calidad y rendimiento.</p>
+
+            <h2 class="section-title">Nuestra Visión</h2>
+            <p class="section-description">Queremos ser la marca líder en el mercado deportivo, reconocida por la
+                innovación, el diseño y la excelencia en cada producto que ofrecemos.</p>
+
+            <h2 class="section-title">Nuestros Valores</h2>
+            <ul class="value-list">
+                <li class="value-item">Pasión por el deporte</li>
+                <li class="value-item">Integridad y ética</li>
+                <li class="value-item">Innovación constante</li>
+                <li class="value-item">Diversidad e inclusión</li>
+                <li class="value-item">Responsabilidad social y ambiental</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galería de Imágenes</h2>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <div class="slide first">
+                        <img src="img/c1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/c2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/c3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/c4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/c5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/c6.jpg" alt="">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function () {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if (counter > 6) {
+                        counter = 1;
+                    }
+                }, 3500);
+            </script>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#">Hombres</a></li>
+                    <li><a href="#">Mujeres</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Nuevas Lanzamientos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre Nike</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Guía de tallas</a></li>
+                    <li><a href="#">Cuidado de los tenis</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Política de devoluciones</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p style="text-align: center; color: #FFFFFF;">&copy; 2023 Nike. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="js/scrip.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then((registration) => {
+                    console.log('Service worker registrado con éxito:', registration);
+                })
+                .catch((error) => {
+                    console.log('Error al registrar el service worker:', error);
+                });
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/ccss2?
+    family=MuseoModerno:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/logo.png" style="width: 50px;"></a>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="acerca.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+            <button type="button" class="btnLogin-popup">Iniciar Sesión</button>
+        </ul>
+    </header>
+    
+    
+    <div class="container">
+        <div class="main-box login">
+            <h1>Iniciar Sesión</h1>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Recuerdáme</label>
+                    <a href="#">¿Haz Olvidado tu Contraseña?</a>
+                </div>
+                <button onclick="window.location.href='index.html'" type="submit" class="main-btn">Iniciar Sesión</button>
+                <div class="register">
+                    <p>¿No tienes una cuenta?<a href="#" class="register-link">Registrate</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="main-box register">
+            <h1>Registrar</h1>
+            <form action="">
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text" required>
+                    <label>Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="check">
+                    <label><input type="checkbox">Acepto Términos y Condiciones</label>
+                </div>
+                <button onclick="window.location.href='login.html'" type="submit" class="main-btn">Registar</button>
+                <div class="register">
+                    <p>Ya tienes una cuenta?<a href="#" class="login-link">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+
+
+        <span class="close-icon">
+            <div class="bx bx-x"></div>
+        </span>
+    </div>
+    
+</body>
+<script src="js/login.js"></script>
+
+</html>

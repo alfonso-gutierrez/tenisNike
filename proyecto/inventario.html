@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/inventario.css">
+</head>
+<body>
+  <header>
+    <div class="menu container">
+        <a href="#" class="logo"><img src="img/logo.png" style="width: 50px;"></a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="img/menu.png" class="menu-icono" alt="menu">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="acerca.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Lista de Productos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <!-- Aquí se generan dinámicamente las filas de la tabla -->
+        </tbody>
+      </table>
+
+      <h2>Agregar Producto</h2>
+      <form id="add-product-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marca:</label>
+          <input type="text" id="brand" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Precio:</label>
+          <input type="number" id="price" required>
+        </div>
+        <button type="submit" class="btn">Agregar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Productos</h3>
+            <ul>
+                <li><a href="#">Hombres</a></li>
+                <li><a href="#">Mujeres</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Nuevas Lanzamientos</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="#">Sobre Nike</a></li>
+                <li><a href="#">Nuestra historia</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Guía de tallas</a></li>
+                <li><a href="#">Cuidado de los tenis</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Política de devoluciones</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Síguenos</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/nike/?locale=es_LA"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="https://www.instagram.com/nike/?hl=es"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://twitter.com/nikestore"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/NIKE"><i class="fab fa-youtube"></i>YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copy">
+        <p style="text-align: center; color: #FFFFFF;">&copy; 2023 Nike. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+  <script src="js/inventario.js"></script>
+</body>
+</html>
